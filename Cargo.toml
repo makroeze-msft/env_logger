@@ -18,10 +18,10 @@ status = "actively-developed"
 
 [dependencies]
 log = { version = "0.4", features = ["std"] }
-regex = { version = "1.0.3", optional = true }
-termcolor = "1"
+regex = {path = "../regex", optional = true }
+termcolor = {path = "../termcolor"}
 humantime = "1.1"
-atty = "0.2.5"
+atty = {path = "../atty"}
 
 [[test]]
 name = "regexp_filter"
